@@ -1,7 +1,44 @@
 <!-- AUTO-UPDATED: Run `xsana update-agents` to refresh API methods -->
 <!-- Source: github.com/Asana/node-asana -->
 
-# Asana Run Script API Reference
+# xsana — Asana Run Script API Reference
+
+## About xsana
+
+**xsana** is an open-source developer tool by [xmatics](https://xmatics.com) for developing and testing Asana "Run Script" rule actions locally.
+
+- **npm package:** `@x-matics/xsana`
+- **Repository:** [github.com/x-matics/xsana](https://github.com/x-matics/xsana)
+- **Website:** [xmatics.com](https://xmatics.com)
+
+### How xsana works
+
+xsana replicates the exact environment that Asana provides inside its "Run Script" rule action. This means you can write, test, and debug scripts on your local machine using the same variables and API instances that are available in Asana — then copy the script directly into an Asana rule.
+
+### Workflow
+
+1. **Install globally:** `npm install -g @x-matics/xsana`
+2. **Set up a project:** `mkdir my-scripts && cd my-scripts && xsana setup`
+3. **Create a script:** `xsana create my-script`
+4. **Edit the script:** modify `scripts/my-script/index.js`
+5. **Test locally:** `xsana run my-script`
+6. **Deploy to Asana:** copy everything below the `===== COPY EVERYTHING BELOW THIS LINE =====` marker into an Asana rule's "Run Script" action
+
+### Script structure
+
+Every xsana script has two sections:
+- **Local testing header** (above the copy line) — contains the `import` from `@x-matics/xsana` which provides `log`, GID variables, and all API instances. This section is NOT copied to Asana.
+- **Script body** (below the copy line) — the actual automation logic. This is what gets pasted into Asana's Run Script action, where the same variables are provided automatically by the Asana environment.
+
+### For AI agents (Claude, etc.)
+
+This file is designed to be used as context by AI coding assistants. When writing xsana scripts:
+- Import everything from `@x-matics/xsana` in the local testing header
+- Write the script body below the copy line using the available API instances listed below
+- Use `log()` instead of `console.log()`
+- All API instances and GID variables are available globally in the Asana environment — no imports needed in the copy section
+- Always use `async/await` and handle errors with `try/catch`
+- Keep scripts fast — they timeout after ~20 seconds in Asana
 
 ## Environment Constraints
 - Scripts timeout in ~20 seconds
