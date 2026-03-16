@@ -1,0 +1,6 @@
+.claude/
+.gitignore
+scripts/
+config/local.config.js
+*.log
+.DS_Store

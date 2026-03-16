@@ -1,0 +1,42 @@
+{
+  "name": "xsana",
+  "version": "1.0.0",
+  "description": "xsana - the xmatics Asana script execution tool. Develop and test Asana Run Script actions locally.",
+  "type": "module",
+  "bin": {
+    "xsana": "./bin/xsana.mjs"
+  },
+  "exports": {
+    ".": "./lib/helper.mjs",
+    "./helper": "./lib/helper.mjs"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "templates/",
+    "examples/",
+    "agents.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "asana": "^3.0.0"
+  },
+  "keywords": [
+    "asana",
+    "automation",
+    "scripts",
+    "xsana",
+    "xmatics",
+    "run-script"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/x-matics/xsana.git"
+  },
+  "homepage": "https://github.com/x-matics/xsana"
+}
