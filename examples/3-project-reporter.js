@@ -30,7 +30,7 @@ async function run() {
         
         // Get project details
         const project = await projectsApiInstance.getProject(project_gid, {
-            opt_fields: 'name,created_at,modified_at,owner'
+            opt_fields: 'name,created_at,modified_at,owner.name'
         });
         
         log(`\n📊 PROJECT REPORT: ${project.data.name}`);
@@ -43,7 +43,7 @@ async function run() {
         
         while (hasMore) {
             const opts = {
-                opt_fields: 'name,completed,due_on,assignee,memberships.section.name',
+                opt_fields: 'name,completed,due_on,assignee.name,memberships.section.name',
                 limit: 100
             };
             

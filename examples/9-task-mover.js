@@ -45,7 +45,7 @@ async function run() {
                 opts.offset = offset;
             }
             
-            const response = await sectionsApiInstance.getTasksForSection(SOURCE_SECTION_GID, opts);
+            const response = await tasksApiInstance.getTasksForSection(SOURCE_SECTION_GID, opts);
             allTasks = allTasks.concat(response.data);
             
             if (response._response && response._response.next_page) {

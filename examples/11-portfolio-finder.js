@@ -34,6 +34,7 @@ async function run() {
         
         // Get all portfolios in the workspace
         const portfolios = await portfoliosApiInstance.getPortfolios(workspace_gid, {
+            owner: 'me',
             opt_fields: 'name,gid'
         });
         

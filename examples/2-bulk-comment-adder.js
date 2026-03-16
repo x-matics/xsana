@@ -42,7 +42,7 @@ async function run() {
                 opts.offset = offset;
             }
             
-            const response = await sectionsApiInstance.getTasksForSection(SECTION_GID, opts);
+            const response = await tasksApiInstance.getTasksForSection(SECTION_GID, opts);
             
             // Filter for incomplete tasks
             const incompleteTasks = response.data.filter(t => !t.completed);

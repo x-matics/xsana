@@ -34,7 +34,7 @@ async function run() {
         
         while (hasMore) {
             const opts = {
-                opt_fields: 'name,assignee,completed,due_on',
+                opt_fields: 'name,assignee.name,completed,due_on',
                 limit: 100
             };
             
