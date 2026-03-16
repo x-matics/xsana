@@ -1,8 +1,23 @@
-# xsana
+<p align="center">
+  <img src="logo.png" alt="xsana by xmatics" width="400" />
+</p>
 
-**Develop and test Asana Run Script actions locally before deploying them.**
+<h3 align="center">xsana</h3>
+<p align="center">
+  <strong>Develop and test Asana Run Script actions locally before deploying them.</strong><br/>
+  An open-source developer tool by <a href="https://xmatics.com">xmatics</a>
+</p>
 
-xsana is the xmatics Asana script execution tool. It provides the same environment that Asana's "Run Script" feature uses, so you can write, test, and debug automation scripts on your local machine and then copy them directly to Asana.
+<p align="center">
+  <a href="https://www.npmjs.com/package/@x-matics/xsana"><img src="https://img.shields.io/npm/v/@x-matics/xsana" alt="npm version" /></a>
+  <a href="https://github.com/x-matics/xsana/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/@x-matics/xsana" alt="license" /></a>
+</p>
+
+---
+
+xsana provides the same environment that Asana's "Run Script" feature uses, so you can write, test, and debug automation scripts on your local machine and then copy them directly to Asana.
+
+Built and maintained by [xmatics](https://xmatics.com) — specialists in Asana workflow automation and business process tooling.
 
 ## Installation
 
@@ -11,6 +26,18 @@ npm install -g @x-matics/xsana
 ```
 
 Requires Node.js 18 or later.
+
+## Updating
+
+```bash
+npm update -g @x-matics/xsana
+```
+
+To check your installed version:
+
+```bash
+xsana --version
+```
 
 ## Quick Start
 
@@ -21,7 +48,7 @@ mkdir my-asana-scripts && cd my-asana-scripts
 xsana setup
 ```
 
-This creates the project structure, installs dependencies (`asana` + `xsana`), and generates a config file.
+This creates the project structure, installs dependencies (`asana` + `@x-matics/xsana`), and generates a config file.
 
 ### 2. Configure your credentials
 
@@ -321,6 +348,8 @@ Contributions are welcome! If you have useful example scripts or improvements, p
 
 ## Links
 
+- [xmatics](https://xmatics.com) — the company behind xsana
+- [xsana on npm](https://www.npmjs.com/package/@x-matics/xsana)
+- [xsana on GitHub](https://github.com/x-matics/xsana)
 - [Asana API Reference](https://developers.asana.com/docs)
 - [Asana Node.js Client (node-asana)](https://github.com/Asana/node-asana)
-- [xsana on GitHub](https://github.com/x-matics/xsana)
