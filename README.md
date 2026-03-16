@@ -7,7 +7,7 @@ xsana is the xmatics Asana script execution tool. It provides the same environme
 ## Installation
 
 ```bash
-npm install -g xsana
+npm install -g @x-matics/xsana
 ```
 
 Requires Node.js 18 or later.
