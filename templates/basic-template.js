@@ -12,19 +12,21 @@
 
 import {
   log, project_gid, task_gid, workspace_gid,
-  allocationsApiInstance, attachmentsApiInstance, customFieldSettingsApiInstance,
-  customFieldsApiInstance, customTypesApiInstance, eventsApiInstance,
-  goalRelationshipsApiInstance, goalsApiInstance, jobsApiInstance,
-  membershipsApiInstance, organizationExportsApiInstance,
-  portfolioMembershipsApiInstance, portfoliosApiInstance,
-  projectBriefsApiInstance, projectMembershipsApiInstance,
+  accessRequestsApiInstance, allocationsApiInstance, attachmentsApiInstance,
+  auditLogAPIApiInstance, batchAPIApiInstance, budgetsApiInstance,
+  customFieldSettingsApiInstance, customFieldsApiInstance, customTypesApiInstance,
+  eventsApiInstance, exportsApiInstance, goalRelationshipsApiInstance,
+  goalsApiInstance, jobsApiInstance, membershipsApiInstance,
+  organizationExportsApiInstance, portfolioMembershipsApiInstance,
+  portfoliosApiInstance, projectBriefsApiInstance, projectMembershipsApiInstance,
   projectStatusesApiInstance, projectTemplatesApiInstance, projectsApiInstance,
-  rulesApiInstance, sectionsApiInstance, statusUpdatesApiInstance,
-  storiesApiInstance, tagsApiInstance, taskTemplatesApiInstance,
-  tasksApiInstance, teamMembershipsApiInstance, teamsApiInstance,
-  timePeriodsApiInstance, timeTrackingEntriesApiInstance,
-  typeaheadApiInstance, userTaskListsApiInstance, usersApiInstance,
-  webhooksApiInstance, workspaceMembershipsApiInstance, workspacesApiInstance
+  ratesApiInstance, reactionsApiInstance, rulesApiInstance,
+  sectionsApiInstance, statusUpdatesApiInstance, storiesApiInstance,
+  tagsApiInstance, taskTemplatesApiInstance, tasksApiInstance,
+  teamMembershipsApiInstance, teamsApiInstance, timePeriodsApiInstance,
+  timeTrackingEntriesApiInstance, typeaheadApiInstance, userTaskListsApiInstance,
+  usersApiInstance, webhooksApiInstance, workspaceMembershipsApiInstance,
+  workspacesApiInstance
 } from '@x-matics/xsana';
 
 // Optional: Override the default GIDs for local testing of this specific script
