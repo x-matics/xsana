@@ -10,7 +10,7 @@
 // process.env.ASANA_ENV = 'staging';
 // process.env.ASANA_ENV = 'production';
 
-import { log, tasksApiInstance, projectsApiInstance, customFieldsApiInstance, sectionsApiInstance, storiesApiInstance, project_gid, task_gid, workspace_gid } from 'xsana';
+import { log, tasksApiInstance, projectsApiInstance, customFieldsApiInstance, sectionsApiInstance, storiesApiInstance, project_gid, task_gid, workspace_gid } from '@x-matics/xsana';
 
 // Optional: Override the default GIDs for local testing of this specific script
 // Uncomment and update these if you want to test with different projects/tasks

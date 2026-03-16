@@ -204,7 +204,7 @@ All examples follow the same structure:
 // Optional: Override environment for testing
 // process.env.ASANA_ENV = 'development'; // 'development', 'staging', 'production'
 
-import { ... } from 'xsana';
+import { ... } from '@x-matics/xsana';
 
 // ============================================================================
 // ===== COPY EVERYTHING BELOW THIS LINE TO ASANA RUN SCRIPT =====

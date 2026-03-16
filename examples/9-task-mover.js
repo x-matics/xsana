@@ -4,7 +4,7 @@
 // Optional: Override environment for testing
 // process.env.ASANA_ENV = 'development'; // 'development', 'staging', 'production'
 
-import { log, tasksApiInstance, sectionsApiInstance } from 'xsana';
+import { log, tasksApiInstance, sectionsApiInstance } from '@x-matics/xsana';
 
 // ============================================================================
 // ===== COPY EVERYTHING BELOW THIS LINE TO ASANA RUN SCRIPT =====

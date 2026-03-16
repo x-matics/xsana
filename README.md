@@ -100,7 +100,7 @@ ASANA_ENV=production xsana run my-script
 ```js
 // At the top of your script, before the import
 process.env.ASANA_ENV = 'production';
-import { log, tasksApiInstance, ... } from 'xsana';
+import { log, tasksApiInstance, ... } from '@x-matics/xsana';
 ```
 
 ## Usage
@@ -125,7 +125,7 @@ Every script has two parts — a local testing header and the actual script:
 // ============================================================================
 // LOCAL TESTING SETUP - DO NOT COPY THIS SECTION TO ASANA
 // ============================================================================
-import { log, tasksApiInstance, project_gid, task_gid, workspace_gid } from 'xsana';
+import { log, tasksApiInstance, project_gid, task_gid, workspace_gid } from '@x-matics/xsana';
 
 // ============================================================================
 // ===== COPY EVERYTHING BELOW THIS LINE TO ASANA RUN SCRIPT =====
