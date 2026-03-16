@@ -17,7 +17,7 @@
 
 xsana provides the same environment that Asana's "Run Script" feature uses, so you can write, test, and debug automation scripts on your local machine and then copy them directly to Asana.
 
-Built and maintained by [xmatics](https://xmatics.com) — specialists in Asana workflow automation and business process tooling.
+Built and maintained by [xmatics](https://xmatics.com) in Berlin, Germany — the AI integration and automation experts. xmatics specializes in Asana implementation, custom integrations, and AI-driven process optimization to help businesses work smarter.
 
 ## Installation
 
@@ -342,13 +342,19 @@ Set `GITHUB_TOKEN` for higher GitHub API rate limits (5000/hr vs 60/hr).
 
 Contributions are welcome! If you have useful example scripts or improvements, please submit a pull request at [github.com/x-matics/xsana](https://github.com/x-matics/xsana).
 
+## About xmatics
+
+[xmatics](https://xmatics.com) is a Berlin-based consultancy specializing in process automation, AI integration, and digital transformation. We help businesses automate workflows with Asana, Microtech ERP, custom integrations, and AI — creating efficient, measurable results.
+
+Need help automating your Asana workflows? [Get in touch](https://xmatics.com).
+
 ## License
 
-[MIT](LICENSE)
+[MIT](LICENSE) — Copyright (c) 2025 xmatics GmbH
 
 ## Links
 
-- [xmatics](https://xmatics.com) — the company behind xsana
+- [xmatics](https://xmatics.com) — AI integration & automation experts, Berlin
 - [xsana on npm](https://www.npmjs.com/package/@x-matics/xsana)
 - [xsana on GitHub](https://github.com/x-matics/xsana)
 - [Asana API Reference](https://developers.asana.com/docs)

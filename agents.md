@@ -7,6 +7,8 @@
 
 **xsana** is an open-source developer tool by [xmatics](https://xmatics.com) for developing and testing Asana "Run Script" rule actions locally.
 
+xmatics is a Berlin-based consultancy specializing in process automation, AI integration, and digital transformation — helping businesses automate workflows with Asana, Microtech ERP, custom integrations, and AI.
+
 - **npm package:** `@x-matics/xsana`
 - **Repository:** [github.com/x-matics/xsana](https://github.com/x-matics/xsana)
 - **Website:** [xmatics.com](https://xmatics.com)
