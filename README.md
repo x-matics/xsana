@@ -181,14 +181,16 @@ See [examples/README.md](examples/README.md) for detailed descriptions.
 
 ## Shell Completion
 
-Enable tab completion for commands and script names:
+Shell completion is automatically installed to your `~/.bashrc` or `~/.zshrc` during `xsana setup`.
+
+To install it manually:
 
 ```bash
 # Add to ~/.bashrc or ~/.zshrc:
 eval "$(xsana completion)"
 ```
 
-Supports both bash and zsh. Use `xsana completion --bash` or `xsana completion --zsh` to force a specific shell.
+Use `xsana completion --bash` or `xsana completion --zsh` to force a specific shell.
 
 ## Best Practices
 
