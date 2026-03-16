@@ -67,6 +67,14 @@ run();
 ## Available API Methods
 
 <!-- BEGIN AUTO-GENERATED -->
+<!-- Last updated: 2026-03-16 -->
+
+### accessRequestsApiInstance
+- approveAccessRequest(access_request_gid)
+- createAccessRequest(body)
+- getAccessRequests(target, opts)
+- rejectAccessRequest(access_request_gid)
+
 ### allocationsApiInstance
 - createAllocation(body, opts)
 - deleteAllocation(allocation_gid)
@@ -80,15 +88,24 @@ run();
 - getAttachment(attachment_gid, opts)
 - getAttachmentsForObject(parent, opts)
 
-### auditLogApiApiInstance
+### auditLogAPIApiInstance
 - getAuditLogEvents(workspace_gid, opts)
 
-### batchApiApiInstance
+### batchAPIApiInstance
 - createBatchRequest(body, opts)
 
+### budgetsApiInstance
+- createBudget(body)
+- deleteBudget(budget_gid)
+- getBudget(budget_gid, opts)
+- getBudgets(parent)
+- updateBudget(body, budget_gid, opts)
+
 ### customFieldSettingsApiInstance
+- getCustomFieldSettingsForGoal(goal_gid, opts)
 - getCustomFieldSettingsForPortfolio(portfolio_gid, opts)
 - getCustomFieldSettingsForProject(project_gid, opts)
+- getCustomFieldSettingsForTeam(team_gid, opts)
 
 ### customFieldsApiInstance
 - createCustomField(body, opts)
@@ -101,10 +118,15 @@ run();
 - updateEnumOption(enum_option_gid, opts)
 
 ### customTypesApiInstance
+- getCustomType(custom_type_gid, opts)
 - getCustomTypes(project, opts)
 
 ### eventsApiInstance
 - getEvents(resource, opts)
+
+### exportsApiInstance
+- createGraphExport(body)
+- createResourceExport(body)
 
 ### goalRelationshipsApiInstance
 - addSupportingRelationship(body, goal_gid, opts)
@@ -114,6 +136,7 @@ run();
 - updateGoalRelationship(body, goal_relationship_gid, opts)
 
 ### goalsApiInstance
+- addCustomFieldSettingForGoal(body, goal_gid)
 - addFollowers(body, goal_gid, opts)
 - createGoal(body, opts)
 - createGoalMetric(body, goal_gid, opts)
@@ -121,6 +144,7 @@ run();
 - getGoal(goal_gid, opts)
 - getGoals(opts)
 - getParentGoalsForGoal(goal_gid, opts)
+- removeCustomFieldSettingForGoal(body, goal_gid)
 - removeFollowers(body, goal_gid, opts)
 - updateGoal(body, goal_gid, opts)
 - updateGoalMetric(body, goal_gid, opts)
@@ -201,6 +225,16 @@ run();
 - removeFollowersForProject(body, project_gid, opts)
 - removeMembersForProject(body, project_gid, opts)
 - updateProject(body, project_gid, opts)
+
+### ratesApiInstance
+- createRate(body, opts)
+- deleteRate(rate_gid)
+- getRate(rate_gid, opts)
+- getRates(opts)
+- updateRate(body, rate_gid, opts)
+
+### reactionsApiInstance
+- getReactionsOnObject(target, emoji_base, opts)
 
 ### rulesApiInstance
 - triggerRule(body, rule_trigger_gid)
@@ -294,6 +328,7 @@ run();
 ### timeTrackingEntriesApiInstance
 - createTimeTrackingEntry(body, task_gid, opts)
 - deleteTimeTrackingEntry(time_tracking_entry_gid)
+- getTimeTrackingEntries(opts)
 - getTimeTrackingEntriesForTask(task_gid, opts)
 - getTimeTrackingEntry(time_tracking_entry_gid, opts)
 - updateTimeTrackingEntry(body, time_tracking_entry_gid, opts)
@@ -308,9 +343,12 @@ run();
 ### usersApiInstance
 - getFavoritesForUser(user_gid, resource_type, workspace, opts)
 - getUser(user_gid, opts)
+- getUserForWorkspace(workspace_gid, user_gid, opts)
 - getUsers(opts)
 - getUsersForTeam(team_gid, opts)
 - getUsersForWorkspace(workspace_gid, opts)
+- updateUser(body, user_gid, opts)
+- updateUserForWorkspace(body, workspace_gid, user_gid, opts)
 
 ### webhooksApiInstance
 - createWebhook(body, opts)
@@ -331,5 +369,4 @@ run();
 - getWorkspaces(opts)
 - removeUserForWorkspace(body, workspace_gid)
 - updateWorkspace(body, workspace_gid, opts)
-
 <!-- END AUTO-GENERATED -->
