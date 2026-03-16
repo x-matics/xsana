@@ -1,6 +1,6 @@
 {
   "name": "@x-matics/xsana",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "xsana - the xmatics Asana script execution tool. Develop and test Asana Run Script actions locally.",
   "type": "module",
   "bin": {
